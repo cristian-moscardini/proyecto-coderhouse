@@ -3,7 +3,27 @@
     background-color: rgba(255, 255, 255, 0.249);
     -webkit-box-shadow: inset 0px 0px 24px 3px rgba(0,0,0,0.84); 
     box-shadow: inset 0px 0px 24px 3px rgba(0,0,0,0.84);
-}
+
+    .navbar-nav{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;                            
+        font-family: $fuente-principal;
+        font-size: 2.5vw;
+        width: 100%;
+
+        &nav-link{
+            padding-left: 4vw;
+            text-shadow: $sombras-encabezados;
+            transition: all 1s;
+
+            &:hover{
+                transform: scale(1.5);
+                }
+            }
+        }
+    }
+
 
 .navbar .container-fluid video{
     position: absolute;
@@ -23,42 +43,24 @@
     margin-left: 2vw;
     width: 12vw;
     transition: transform 1s;
+
+    &:hover {
+        transform: scale(1.2);
+
+        }
     }
 
-.logoHeader:hover{
-    transform: scale(1.2);
-}
 
 .logoHeaderHome{
     height: 10vh ;
     width: auto;
 }
 
-.navbar-nav .nav-link:hover {
-    transform: scale(1.5);
-}
-
-.navbar-nav .nav-link{
-    transition: all 1s;
-}
-
-.navbar-nav .nav-link{
-    padding-left: 4vw;
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 0px 2px rgba(206,89,55,0);
-}
-.navbar-nav{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;                            
-    font-family: $fuente-principal;
-    font-size: 2.5vw;
-    width: 100%;
-}
-
-.navbar-light .navbar-nav .nav-link:hover{
-    color: #FFF;
-}
 .navbar-light .navbar-nav .nav-link{
     color: white;
     letter-spacing: 2px;
+    
+    &:hover {
+        color: #FFF;
+    }
 }

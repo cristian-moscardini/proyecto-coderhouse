@@ -1,0 +1,75 @@
+.backgroundHome {
+    background-image:url(./imagenes/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 100vh;
+    }
+
+.backgroundCarga{
+    background-image: url(./imagenes/FOTO\ \(23\).jpg);
+    background-size:cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
+
+.backgroundLyrics{
+    background-image:url(./imagenes/FOTO\ \(22\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.backgroundShows{
+    background-image: url(./imagenes/FOTO\ \(24\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.backgroundNosotros{
+    background-image: url(./imagenes/FOTO\ \(14\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.backgroundNew{
+    background-image: url(./imagenes/FOTO\ \(19\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.backgroundGaleria{
+    background-image: url(./imagenes/FOTO\ \(6\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+
+.backgroundSuscribite{
+    background-image: url(./imagenes/FOTO\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
