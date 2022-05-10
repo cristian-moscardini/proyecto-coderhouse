@@ -1,3 +1,11 @@
+.backgroundHome, .backgroundCarga, .backgroundLyrics, .backgroundShows, .backgroundNosotros, .backgroundNew, .backgroundGaleria, .backgroundSuscribite {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  min-height: 100vh; }
+
 .header {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.249);
@@ -45,3 +53,29 @@
   letter-spacing: 2px; }
   .navbar-light .navbar-nav .nav-link:hover {
     color: #FFF; }
+
+.backgroundHome {
+  background-image: url(./imagenes/fondo.jpg); }
+
+.backgroundCarga {
+  background-image: url(../../imagenes/FOTO23.jpg);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr; }
+
+.backgroundLyrics {
+  background-image: url(../../imagenes/FOTO22.jpg); }
+
+.backgroundShows {
+  background-image: url(../../imagenes/FOTO24.jpg); }
+
+.backgroundNosotros {
+  background-image: url(../../imagenes/FOTO14.jpg); }
+
+.backgroundNew {
+  background-image: url(../../imagenes/FOTO19.jpg); }
+
+.backgroundGaleria {
+  background-image: url(../../imagenes/FOTO6.jpg); }
+
+.backgroundSuscribite {
+  background-image: url(../../imagenes/FOTO2.jpg); }
