@@ -10,7 +10,7 @@
 
 
 
-.backgroundHome {
+/* .backgroundHome {
     position: relative;
     background-image:url(./imagenes/fondo.jpg);
     background-size: cover;
@@ -93,8 +93,8 @@
     background-attachment: fixed;
     min-height: 100vh;
 }
-
-.header{
+ */
+/* .header{
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.249);
     -webkit-box-shadow: inset 0px 0px 24px 3px rgba(0,0,0,0.84); 
@@ -134,14 +134,7 @@
     padding: 0;
 }
 
-.banner{
-    display: flex;
-    border-style: solid;
-    border-color:rgba(10, 10, 34, 0.479);
-    border-width: 10px;
-    width: 100%;
-    margin-top: 5px;
-}
+
 
 .logoCarga{
     display: flex;
@@ -181,7 +174,7 @@
 .navbar-light .navbar-nav .nav-link{
     color: white;
     letter-spacing: 2px;
-}
+} */
 
 h1 {display: flex;
     justify-content: center;
@@ -198,11 +191,11 @@ h1 {display: flex;
 }
 
 
-a{
+/* a{
     text-decoration: none;
 }
-
-.suscripcion{
+ */
+/* .suscripcion{
     text-align: center;
     font-family: 'Metal Mania', cursive;
     position: relative;
@@ -214,9 +207,9 @@ a{
     border-style: solid;
     border-width: 10px;
     border-color: rgba(145, 45, 123, 0.418);
-}
+} */
 
-.galeria{
+/* .galeria{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -257,9 +250,9 @@ a{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30vw 30vw 30vw;
     padding: 10px;
-}
+} */
 
-.mainHome{
+/* .mainHome{
     min-height: 100vh;
     width: 100%;
 }
@@ -369,9 +362,9 @@ a{
     display: block;
     width: 30vw;
 }
+ */
 
-
-.iconos__footer{
+/* .iconos__footer{
     background-color: rgba(90, 90, 90, 0.541);
     list-style: none;
     display: flex;
@@ -391,4 +384,4 @@ a{
     position: absolute;
     bottom: 1%;
     width: 100%;
-}
+} */

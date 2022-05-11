@@ -1,0 +1,99 @@
+.mainHome{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.mainHome .anchorNew:hover{
+    transform: scale(1.4);
+}
+.anchorNew{
+    position: absolute;
+    font-family: $fuente-principal;
+    color: map-get($colores,fuente-links);
+    text-shadow: $sombras-encabezados;
+    font-size: 3vw;
+    left: 15%;
+    top: 45%;
+    transition: all 1s;
+}
+
+.mainHome .anchorNew .anchorNewLink{
+    color: map-get($colores,fuente-links);
+    text-shadow: $sombras-encabezados;
+    letter-spacing: 0.2rem;
+    transition: all 1s;
+}
+
+.imagenNew1{
+    width: 70%;
+}
+
+.imagenNew2{
+    @include estilo-img-main (2deg);
+    left: 35%;
+    z-index: 100;
+    top: 26%;
+    transition: all 1s;
+}
+
+.imagenNew3{
+    @include estilo-img-main (5deg);
+    top: -15%;
+    left: 26%;
+}
+
+.imagenNew4{
+    @include estilo-img-main (-20deg);
+    bottom: -35%;
+    left: 25%;
+    
+    
+    
+}
+.contenedorNew{
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+    display: block;
+    width: 30vw;
+}
+
+.contenedorShows{
+    position: relative;
+    bottom: 5vw;
+    left: 65vw;
+    display: block;
+    width: 30vw;
+}
+
+.contenedorLyrics{
+    position: relative;
+    bottom: 5vw;
+    left: 5vw;
+    display: block;
+    width: 30vw;
+}
+
+.contenedorNosotros{
+    position: relative;
+    bottom: 15vw;
+    left: 65vw;
+    display: block;
+    width: 30vw;
+}
+
+.contenedorGaleria{
+    position: relative;
+    bottom: 15vw;
+    left: 5vw;
+    display: block;
+    width: 30vw;
+}
+
+.contenedorSuscribite{
+    position: relative;
+    bottom: 25vw;
+    left: 65vw;
+    display: block;
+    width: 30vw;
+}
