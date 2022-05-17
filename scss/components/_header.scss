@@ -4,6 +4,10 @@
     -webkit-box-shadow: inset 0px 0px 24px 3px rgba(0,0,0,0.84); 
     box-shadow: inset 0px 0px 24px 3px rgba(0,0,0,0.84);
 
+    .container-fluid{
+        padding-left: 0;
+        }
+
     .navbar-nav{
         display: flex;
         justify-content: space-around;
@@ -11,16 +15,7 @@
         font-family: $fuente-principal;
         font-size: 2.5vw;
         width: 100%;
-
-        &nav-link{
-            padding-left: 4vw;
-            text-shadow: $sombras-encabezados;
-            transition: all 1s;
-
-            &:hover{
-                transform: scale(1.5);
-                }
-            }
+      
         }
     }
 
@@ -56,11 +51,19 @@
     width: auto;
 }
 
-.navbar-light .navbar-nav .nav-link{
-    color: white;
-    letter-spacing: 2px;
-    
-    &:hover {
-        color: #FFF;
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            color: rgb(79, 71, 71);
+            letter-spacing: 2px;
+            padding-left: 4vw;
+            text-shadow: $sombras-encabezados;
+            transition: all 1s;
+        
+            &:hover{
+            color: #FFF;
+            transform: scale(1.5);
+            }
+        }
     }
 }
