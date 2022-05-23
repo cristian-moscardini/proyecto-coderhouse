@@ -11,27 +11,27 @@
   background-image: url(../../imagenes/fondo.jpg); }
 
 .backgroundCarga {
-  background-image: url(../../imagenes/FOTO23.jpg);
+  background-image: url(../../imagenes/bgcarga.jpg);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr; }
 
 .backgroundLyrics {
-  background-image: url(../../imagenes/FOTO22.jpg); }
+  background-image: url(../../imagenes/bglyrics.jpg); }
 
 .backgroundShows {
-  background-image: url(../../imagenes/FOTO24.jpg); }
+  background-image: url(../../imagenes/bgshows.jpg); }
 
 .backgroundNosotros {
-  background-image: url(../../imagenes/FOTO14.jpg); }
+  background-image: url(../../imagenes/bgnosotros.jpg); }
 
 .backgroundNew {
-  background-image: url(../../imagenes/FOTO19.jpg); }
+  background-image: url(../../imagenes/bgnew.jpg); }
 
 .backgroundGaleria {
-  background-image: url(../../imagenes/FOTO6.jpg); }
+  background-image: url(../../imagenes/bggaleria.jpg); }
 
 .backgroundSuscribite {
-  background-image: url(../../imagenes/FOTO2.jpg); }
+  background-image: url(../../imagenes/bgsuscribite.jpg); }
 
 h1 {
   display: flex;

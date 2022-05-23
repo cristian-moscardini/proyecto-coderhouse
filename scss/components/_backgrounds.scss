@@ -4,40 +4,40 @@
     }
 
 .backgroundCarga{
-    background-image: url(../../imagenes/FOTO23.jpg);
+    background-image:url(../../imagenes/bgcarga.jpg);
     @extend %estilo-bg;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     }
 
 .backgroundLyrics{
-    background-image:url(../../imagenes/FOTO22.jpg);
+    background-image:url(../../imagenes/bglyrics.jpg);
     @extend %estilo-bg;
 }
 
 .backgroundShows{
-    background-image: url(../../imagenes/FOTO24.jpg);
+    background-image: url(../../imagenes/bgshows.jpg);
     @extend %estilo-bg;
 }
 
 .backgroundNosotros{
-    background-image: url(../../imagenes/FOTO14.jpg);
+    background-image: url(../../imagenes/bgnosotros.jpg);
     @extend %estilo-bg;
 }
 
 .backgroundNew{
-    background-image: url(../../imagenes/FOTO19.jpg);
+    background-image: url(../../imagenes/bgnew.jpg);
     @extend %estilo-bg;
 }
 
 .backgroundGaleria{
-    background-image: url(../../imagenes/FOTO6.jpg);
+    background-image: url(../../imagenes/bggaleria.jpg);
     @extend %estilo-bg;
 }
 
 
 
 .backgroundSuscribite{
-    background-image: url(../../imagenes/FOTO2.jpg);
+    background-image: url(../../imagenes/bgsuscribite.jpg);
     @extend %estilo-bg;
 }
