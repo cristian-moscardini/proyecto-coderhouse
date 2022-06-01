@@ -1,6 +1,7 @@
 .mainHome{
     width: 100%;
     height: 100%;
+    
             
     .anchorNew{
         position: absolute;
@@ -27,75 +28,179 @@
     }
 }
 
-.imagenNew1{
-    width: 70%;
-}
-
-.imagenNew2{
-    @include estilo-img-main (2deg);
-    left: 35%;
-    z-index: 100;
-    top: 26%;
-    transition: all 1s;
-}
-
-.imagenNew3{
-    @include estilo-img-main (5deg);
-    top: -15%;
-    left: 26%;
-}
-
-.imagenNew4{
-    @include estilo-img-main (-20deg);
-    bottom: -35%;
-    left: 25%;
-}
 
 .contenedorNew{
-    display: flex;
     position: relative;
     top: 20px;
     left: 5vw;
     width: 30vw;
+    height: 30vw;
+    
+    .imagenNew1{
+        width: 70%;
+    }
+    
+    .imagenNew2{
+        @include estilo-img-main (2deg);
+        left: 45%;
+        z-index: 100;
+        top: 26%;
+        transition: all 1s;
+    }
+    
+    .imagenNew3{
+        @include estilo-img-main (5deg);
+        top: -30%;
+        left: 32%;
+        transition: all 1s;
+    }
+    
+    .imagenNew4{
+        @include estilo-img-main (-20deg);
+        bottom: -55%;
+        left: 25%;
+        transition: all 1s;
+    }
 }
+
 
 .contenedorShows{
-    display: flex;
     position: relative;
-    
     left: 55vw;
     width: 30vw;
+    .imagenShows1{
+        width: 70%;
+    }
+    
+    .imagenShows2{
+        @include estilo-img-main (2deg);
+        left: 45%;
+        z-index: 100;
+        top: 26%;
+        transition: all 1s;
+    }
+    
+    .imagenShows3{
+        @include estilo-img-main (5deg);
+        top: -30%;
+        left: 32%;
+        transition: all 1s;
+    }
+    
+    .imagenShows4{
+        @include estilo-img-main (-20deg);
+        bottom: -55%;
+        left: 25%;
+        transition: all 1s;
+    }
 }
 
+
+
+
 .contenedorLyrics{
-    display: flex;
     position: relative;
-    
     left: 5vw;
     width: 30vw;
+
+    .imagenLyrics1{
+        width: 70%;
+    }
+    
+    .imagenLyrics2{
+        @include estilo-img-main (2deg);
+        left: 45%;
+        z-index: 100;
+        top: 26%;
+        transition: all 1s;
+    }
+    
+    .imagenLyrics3{
+        @include estilo-img-main (5deg);
+        top: -30%;
+        left: 32%;
+        transition: all 1s;
+    }
+    
+    .imagenLyrics4{
+        @include estilo-img-main (-20deg);
+        bottom: -55%;
+        left: 25%;
+        transition: all 1s;
+    }
 }
 
 .contenedorNosotros{
-    display: flex;
     position: relative;
-    
     left: 55vw;
     width: 30vw;
+
+    .imagenNosotros1{
+        width: 70%;
+    }
+    
+    .imagenNosotros2{
+        @include estilo-img-main (2deg);
+        left: 45%;
+        z-index: 100;
+        top: 26%;
+        transition: all 1s;
+    }
+    
+    .imagenNosotros3{
+        @include estilo-img-main (5deg);
+        top: -30%;
+        left: 32%;
+        transition: all 1s;
+    }
+    
+    .imagenNosotros4{
+        @include estilo-img-main (-20deg);
+        bottom: -55%;
+        left: 25%;
+        transition: all 1s;
+    }
 }
 
 .contenedorGaleria{
-    display: flex;
     position: relative;
-    
     left: 5vw;
     width: 30vw;
+
+    .imagenGaleria1{
+        width: 70%;
+    }
+    
+    .imagenGaleria2{
+        @include estilo-img-main (2deg);
+        left: 45%;
+        z-index: 100;
+        top: 26%;
+        transition: all 1s;
+    }
+    
+    .imagenGaleria3{
+        @include estilo-img-main (5deg);
+        top: -30%;
+        left: 32%;
+        transition: all 1s;
+    }
+    
+    .imagenGaleria4{
+        @include estilo-img-main (-20deg);
+        bottom: -55%;
+        left: 25%;
+        transition: all 1s;
+    }
+}
+.hoverIzq:hover {
+    transform: translate(7vw) scale(1.3);
+    box-shadow: 0 2rem 20px rgba(0, 0, 0, 0.6);
+    z-index: 100;
 }
 
-.contenedorSuscribite{
-    display: flex;
-    position: relative;
-    left: 55vw;
-    width: 30vw;
-    height: auto;
-    
+.hoverDer:hover {
+    transform: translate(-7vw) scale(1.3);
+    box-shadow: 0 2rem 20px rgba(0, 0, 0, 0.6);
+    z-index: 100;
 }
