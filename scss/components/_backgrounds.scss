@@ -1,43 +1,43 @@
 .backgroundHome {
-    background-image:url(../../imagenes/fondo.jpg);
-    @extend %estilo-bg;
+    background-image: url(../imagenes/bghome.jpg);
+    @extend .estilo-bg;
     }
 
 .backgroundCarga{
-    background-image:url(../../imagenes/bgcarga.jpg);
-    @extend %estilo-bg;
+    background-image: url(../imagenes/bgcarga.jpg);
+    @extend .estilo-bg;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     }
 
 .backgroundLyrics{
-    background-image:url(../../imagenes/bglyrics.jpg);
-    @extend %estilo-bg;
+    background-image: url(../imagenes/bglyrics.jpg);
+    @extend .estilo-bg;
 }
 
 .backgroundShows{
-    background-image: url(../../imagenes/bgshows.jpg);
-    @extend %estilo-bg;
+    background-image: url(../imagenes/bgshows.jpg);
+    @extend .estilo-bg;
 }
 
 .backgroundNosotros{
-    background-image: url(../../imagenes/bgnosotros.jpg);
-    @extend %estilo-bg;
+    background-image: url(../imagenes/bgnosotros.jpg);
+    @extend .estilo-bg;
 }
 
 .backgroundNew{
-    background-image: url(../../imagenes/bgnew.jpg);
-    @extend %estilo-bg;
+    background-image: url(../imagenes/bgnew.jpg);
+    @extend .estilo-bg;
 }
 
 .backgroundGaleria{
-    background-image: url(../../imagenes/bggaleria.jpg);
-    @extend %estilo-bg;
+    background-image: url(../imagenes/bggaleria.jpg);
+    @extend .estilo-bg;
 }
 
 
 
 .backgroundSuscribite{
-    background-image: url(../../imagenes/bgsuscribite.jpg);
-    @extend %estilo-bg;
+    background-image: url(../imagenes/bgsuscribite.jpg);
+    @extend .estilo-bg;
 }

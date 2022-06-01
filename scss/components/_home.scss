@@ -1,28 +1,30 @@
 .mainHome{
-    min-height: 100vh;
     width: 100%;
-}
+    height: 100%;
+            
+    .anchorNew{
+        position: absolute;
+        font-family: $fuente-principal;
+        color: map-get($colores,fuente-links);
+        text-shadow: $sombras-encabezados;
+        font-size: 3vw;
+        left: 15%;
+        top: 45%;
+        transition: all 1s;
 
-.mainHome .anchorNew:hover{
-    transform: scale(1.4);
-}
-.anchorNew{
-    position: absolute;
-    font-family: $fuente-principal;
-    color: map-get($colores,fuente-links);
-    text-shadow: $sombras-encabezados;
-    font-size: 3vw;
-    left: 15%;
-    top: 45%;
-    transition: all 1s;
-}
-
-.mainHome .anchorNew .anchorNewLink{
-    color: map-get($colores,fuente-links);
-    text-shadow: $sombras-encabezados;
-    letter-spacing: 0.2rem;
-    text-decoration: none;
-    transition: all 1s;
+        &:hover{
+            transform: scale(1.4);
+        }
+            
+        .anchorNewLink{
+            color: map-get($colores,fuente-links);
+            text-shadow: $sombras-encabezados;
+            background-image: url();
+            letter-spacing: 0.2rem;
+            text-decoration: none;
+            transition: all 1s;
+        }
+    }
 }
 
 .imagenNew1{
@@ -47,54 +49,53 @@
     @include estilo-img-main (-20deg);
     bottom: -35%;
     left: 25%;
-    
-    
-    
 }
+
 .contenedorNew{
+    display: flex;
     position: relative;
-    bottom: 5vh;
+    top: 20px;
     left: 5vw;
-    display: block;
     width: 30vw;
 }
 
 .contenedorShows{
+    display: flex;
     position: relative;
-    bottom: 5vw;
+    
     left: 55vw;
-    display: block;
     width: 30vw;
 }
 
 .contenedorLyrics{
+    display: flex;
     position: relative;
-    bottom: 5vw;
+    
     left: 5vw;
-    display: block;
     width: 30vw;
 }
 
 .contenedorNosotros{
+    display: flex;
     position: relative;
-    bottom: 15vw;
+    
     left: 55vw;
-    display: block;
     width: 30vw;
 }
 
 .contenedorGaleria{
+    display: flex;
     position: relative;
-    bottom: 15vw;
+    
     left: 5vw;
-    display: block;
     width: 30vw;
 }
 
 .contenedorSuscribite{
+    display: flex;
     position: relative;
-    bottom: 25vw;
     left: 55vw;
-    display: block;
     width: 30vw;
+    height: auto;
+    
 }
