@@ -1,68 +1,97 @@
-.mainNosotros{
+.mainNosotros {
     width: 100%;
+/*     height: 80vh; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vw;
+
+
+    figure {
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100vh;
+        position: relative;
+        height: 60vh;
+        width: 40vw;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+        margin: 1vw;
 
-        figure{
-            position:relative;
-             height: 40vw;
-             width: 30vw;
-             overflow: hidden;
-             border-radius: 6px;
-             box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-
-            &:hover > .capa {
-                opacity: 1;
-                visibility: visible;
-            }
-
-            &:hover > .capa h3{
-                margin-top: 70px;
-                margin-bottom: 15px;
-            }
-
-            &:hover > img{
-                transform: scale(1.3);
-            }
-
-
+        &:hover>.capa {
+            opacity: 1;
+            visibility: visible;
         }
-        
-        & figure img{
-/*             width: 100%; */
-            height: 100%;
+
+        &:hover>.capa h3 {
+            margin-top: 70px;
+            margin-bottom: 15px;
+        }
+
+        &:hover>img {
+            transform: scale(1.3);
+        }
+
+
+    }
+
+    & figure img {
+        width: 100%;
+        /* height: 100%; */
+        object-fit: cover;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+
+    & figure .capa {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(100, 103, 104, 0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+
+        & h3 {
+            font-family: $fuente-principal;
+            letter-spacing: 0.2rem;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 120px;
             transition: all 400ms ease-out;
-            will-change: transform;
+            margin-top: 30px;
         }
 
-        & figure .capa{
-            position: absolute;
-            top: 0;
+        & p {
+            color: #fff;
+            font-size: 15px;
+            line-height: 1.5;
             width: 100%;
-            height: 100%;
-            background: rgba(100, 103, 104, 0.7);
-            transition: all 400ms ease-out;
-            opacity: 0;
-            visibility: hidden;
-            text-align: center;
-
-            & h3{
-                color: #fff;
-                font-weight: 400;
-                margin-bottom: 120px;
-                transition: all 400ms ease-out;
-                 margin-top: 30px;
-            }
-
-            & p{
-                color: #fff;
-                font-size: 15px;
-                line-height: 1.5;
-                width: 100%;
-                max-width: 220px;
-                margin: auto;
-            }
+            max-width: 220px;
+            margin: auto;
         }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .mainNosotros{
+        flex-wrap: wrap;
+        padding-bottom: 16vw;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .mainNosotros{
+        flex-direction: column;
+        padding-bottom: 20vw;
+    }
+
+    .mainNosotros figure{
+        width: 80vw;
+        height: 130vw;
+    }
 }

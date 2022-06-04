@@ -313,6 +313,27 @@
   height: 30vw;
   display: none; }
 
+.mainLyrics {
+  margin-top: 1vw;
+  width: 60vw;
+  text-align: center;
+  font-family: "Metal Mania", cursive;
+  font-size: large;
+  padding-bottom: 10vw; }
+  .mainLyrics > .contenedorAcordeon > .card {
+    background-color: rgba(242, 232, 232, 0.6);
+    margin-bottom: 20px;
+    margin-top: 20px; }
+    .mainLyrics > .contenedorAcordeon > .card > .cardHeader {
+      background-color: rgba(18, 25, 112, 0.619);
+      font-size: larger; }
+      .mainLyrics > .contenedorAcordeon > .card > .cardHeader > .mb-0 > .btn {
+        font-size: 3vw;
+        color: white;
+        border: none;
+        letter-spacing: 0.2rem;
+        text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
+
 .sectionNew {
   background-color: rgba(255, 255, 255, 0.566);
   border-radius: 10%;
@@ -331,17 +352,23 @@
 
 .mainNosotros {
   width: 100%;
+  /*     height: 80vh; */
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 100vh; }
+  padding-bottom: 5vw; }
   .mainNosotros figure {
+    display: flex;
+    justify-content: center;
     position: relative;
-    height: 40vw;
-    width: 30vw;
+    height: 60vh;
+    width: 40vw;
     overflow: hidden;
     border-radius: 6px;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    margin: 1vw; }
     .mainNosotros figure:hover > .capa {
       opacity: 1;
       visibility: visible; }
@@ -351,8 +378,9 @@
     .mainNosotros figure:hover > img {
       transform: scale(1.3); }
   .mainNosotros figure img {
-    /*             width: 100%; */
-    height: 100%;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
     transition: all 400ms ease-out;
     will-change: transform; }
   .mainNosotros figure .capa {
@@ -366,6 +394,8 @@
     visibility: hidden;
     text-align: center; }
     .mainNosotros figure .capa h3 {
+      font-family: "Metal Mania", cursive;
+      letter-spacing: 0.2rem;
       color: #fff;
       font-weight: 400;
       margin-bottom: 120px;
@@ -378,6 +408,19 @@
       width: 100%;
       max-width: 220px;
       margin: auto; }
+
+@media only screen and (max-width: 768px) {
+  .mainNosotros {
+    flex-wrap: wrap;
+    padding-bottom: 16vw; } }
+
+@media only screen and (max-width: 425px) {
+  .mainNosotros {
+    flex-direction: column;
+    padding-bottom: 20vw; }
+  .mainNosotros figure {
+    width: 80vw;
+    height: 130vw; } }
 
 .galeria {
   display: flex;

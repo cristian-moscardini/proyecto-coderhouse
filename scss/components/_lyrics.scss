@@ -1,0 +1,35 @@
+.mainLyrics{
+    margin-top: 1vw;
+    width: 60vw;
+    text-align: center;
+    font-family: $fuente-principal;
+    font-size: large;
+    padding-bottom: 10vw;
+
+    &>.contenedorAcordeon{
+        
+        
+
+        &>.card{
+            background-color: rgba(242, 232, 232, 0.6);
+            margin-bottom: 20px;
+            margin-top: 20px;
+            
+            &>.cardHeader{
+                background-color: rgba(18, 25, 112, 0.619);
+                font-size: larger;
+
+                &>.mb-0{
+                    &>.btn{
+                        font-size: 3vw;
+                        color: white;
+                        border: none;
+                        letter-spacing: 0.2rem;
+                        text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+                    }
+                }
+            }
+        }
+    }
+}
+
