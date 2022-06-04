@@ -1,23 +1,28 @@
-h1 {display: flex;
+.anchorLogoCarga{
+    display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100vw;
-    color: rgb(231, 227, 227);
-    text-shadow: 5px 5px 10px black;
-    letter-spacing: 5px;
-    font-family: 'Metal Mania', cursive;
-    background-color: rgba(0, 255, 255, 0.479);
-    font-size: 5vw;
-    font-weight: 50;
+    align-items: center;
+    height: 100vh;
+
 }
 
 .logoCarga{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     border-style: solid ;
     border-color: rgba(10, 10, 34, 0.479);
     border-width: 0.7vh;
-    width: 15vw;
+    width: 30vw;
+    z-index: 2;
 }
+
+.bgCarga{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
