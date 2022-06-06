@@ -1,5 +1,6 @@
 .estilo-bg, .backgroundHome, .backgroundLyrics, .backgroundShows, .backgroundNosotros, .backgroundNew, .backgroundGaleria {
   position: relative;
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -51,7 +52,7 @@
   height: 100%; }
   .mainHome .anchorNew {
     position: absolute;
-    font-family: "Metal Mania", cursive;
+    font-family: "Metal Mania", serif;
     color: white;
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 0px 2px rgba(206, 89, 55, 0);
     font-size: 3vw;
@@ -317,7 +318,7 @@
   margin-top: 1vw;
   width: 60vw;
   text-align: center;
-  font-family: "Metal Mania", cursive;
+  font-family: "Metal Mania", serif;
   font-size: large;
   padding-bottom: 10vw; }
   .mainLyrics > .contenedorAcordeon > .card {
@@ -334,21 +335,35 @@
         letter-spacing: 0.2rem;
         text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
-.sectionNew {
-  background-color: rgba(255, 255, 255, 0.566);
-  border-radius: 10%;
-  height: auto;
-  padding-left: 3vw;
-  padding-right: 3vw;
-  padding-bottom: 2vw;
-  font-family: "Metal Mania", cursive; }
-  .sectionNew .contenedorIframe {
-    margin-top: 2%; }
-    .sectionNew .contenedorIframe .iframeNew {
-      border-radius: 10%; }
-  .sectionNew .description {
-    margin-top: 9%;
-    text-align: center; }
+@media only screen and (max-width: 425px) {
+  .mainLyrics {
+    width: 90vw; } }
+
+.mainNew {
+  padding-bottom: 10vw; }
+  .mainNew .sectionNew {
+    background-color: rgba(255, 255, 255, 0.566);
+    border-radius: 10%;
+    height: auto;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 2vw;
+    font-family: "Metal Mania", serif; }
+    .mainNew .sectionNew .contenedorIframe {
+      margin-top: 2%;
+      width: 500px; }
+      .mainNew .sectionNew .contenedorIframe .iframeNew {
+        border-radius: 10%;
+        width: 100%; }
+    .mainNew .sectionNew .description {
+      margin-top: 9%;
+      text-align: center; }
+
+@media only screen and (max-width: 425px) {
+  .contenedorIframe {
+    width: 300px; }
+  .mainNew {
+    padding-bottom: 20vw; } }
 
 .mainNosotros {
   width: 100%;
@@ -394,7 +409,7 @@
     visibility: hidden;
     text-align: center; }
     .mainNosotros figure .capa h3 {
-      font-family: "Metal Mania", cursive;
+      font-family: "Metal Mania", serif;
       letter-spacing: 0.2rem;
       color: #fff;
       font-weight: 400;
@@ -422,6 +437,99 @@
     width: 80vw;
     height: 130vw; } }
 
+.mainShows {
+  padding-bottom: 10vw; }
+  .mainShows > .contenedorMain {
+    margin-top: 20px;
+    background-color: rgba(112, 110, 110, 0.34);
+    padding: 1vw;
+    border-radius: 5px; }
+    .mainShows > .contenedorMain > .accordion-wrap {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .mainShows > .contenedorMain > .accordion-wrap > a {
+        color: #fff;
+        text-decoration: none; }
+        .mainShows > .contenedorMain > .accordion-wrap > a:hover {
+          text-decoration: none; }
+      .mainShows > .contenedorMain > .accordion-wrap > .accordion {
+        position: relative;
+        border-top: 1px solid #fff; }
+        .mainShows > .contenedorMain > .accordion-wrap > .accordion:last-child {
+          border-bottom: 1px solid #fff; }
+        .mainShows > .contenedorMain > .accordion-wrap > .accordion > .teaser {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 100%;
+          padding: 24px 100px 24px 0;
+          position: relative; }
+          .mainShows > .contenedorMain > .accordion-wrap > .accordion > .teaser:last-child {
+            border-bottom: 1px solid #fff; }
+          .mainShows > .contenedorMain > .accordion-wrap > .accordion > .teaser > .time {
+            display: flex;
+            align-items: center;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 200px; }
+          .mainShows > .contenedorMain > .accordion-wrap > .accordion > .teaser > .title > .theme {
+            opacity: .4; }
+          @media (max-width: 990px) {
+            .mainShows > .contenedorMain > .accordion-wrap > .accordion > .teaser {
+              flex-direction: column; } }
+        .mainShows > .contenedorMain > .accordion-wrap > .accordion > .content {
+          padding: 0 120px 30px 200px; }
+          @media (max-width: 1200px) {
+            .mainShows > .contenedorMain > .accordion-wrap > .accordion > .content {
+              padding: 0 120px 30px 0; } }
+        .mainShows > .contenedorMain > .accordion-wrap > .accordion > .accordion-toggle {
+          width: 10vw;
+          height: 100%;
+          position: absolute;
+          background-color: rgba(255, 255, 255, 0.14);
+          right: 0;
+          top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.3s ease; }
+          .mainShows > .contenedorMain > .accordion-wrap > .accordion > .accordion-toggle > span {
+            background-color: #fff;
+            transition: 0.3s ease; }
+            .mainShows > .contenedorMain > .accordion-wrap > .accordion > .accordion-toggle > span.one {
+              height: 1px;
+              width: 26px;
+              position: absolute;
+              top: 50%; }
+            .mainShows > .contenedorMain > .accordion-wrap > .accordion > .accordion-toggle > span.two {
+              width: 1px;
+              height: 26px;
+              position: absolute;
+              left: 50%;
+              opacity: 0;
+              transform: rotate(120deg); }
+        .mainShows > .contenedorMain > .accordion-wrap > .accordion.collapsed > .accordion-toggle > span.two {
+          opacity: 1;
+          transform: rotate(0); }
+
+h3 {
+  font-family: "Metal Mania", serif;
+  font-size: 34px;
+  letter-spacing: 0.2rem; }
+
+h5 {
+  font-family: "Metal Mania", serif;
+  font-size: 20px; }
+
+h6 {
+  font-family: "Metal Mania", serif;
+  font-size: 16px; }
+
+@media only screen and (max-width: 425px) {
+  .mainShows {
+    padding-bottom: 10vh; } }
+
 .backgroundGaleria > .mainGaleria {
   margin-top: 2vh;
   padding-bottom: 15vw; }
@@ -436,17 +544,14 @@
       overflow: hidden;
       object-fit: cover; }
       .backgroundGaleria > .mainGaleria > .sectionCarousel > .carousel > .carousel-inner > .carousel-item {
-        /*                         overflow-y: hidden; */
-        height: 300px;
-        display: flex;
-        align-items: center; }
+        height: 600px; }
         .backgroundGaleria > .mainGaleria > .sectionCarousel > .carousel > .carousel-inner > .carousel-item > img {
-          overflow: hidden;
-          height: auto;
-          width: auto; }
+          /*                             overflow: hidden; */
+          height: 100%;
+          object-fit: cover; }
     .backgroundGaleria > .mainGaleria > .sectionCarousel > .textoCarousel {
       color: white;
-      font-family: "Metal Mania", cursive;
+      font-family: "Metal Mania", serif;
       letter-spacing: 0.1rem;
       text-align: center; }
 
@@ -463,6 +568,10 @@
     height: auto;
     width: 100%; }
 
+@media only screen and (max-width: 425px) {
+  .backgroundGaleria > .mainGaleria > .sectionCarousel > .carousel > .carousel-inner > .carousel-item {
+    height: 300px; } }
+
 .header {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.249);
@@ -474,7 +583,7 @@
     display: flex;
     justify-content: space-around;
     list-style: none;
-    font-family: "Metal Mania", cursive;
+    font-family: "Metal Mania", serif;
     font-size: 2.5vw;
     width: 100%; }
 
@@ -510,6 +619,10 @@
   .navbar-light .navbar-nav .nav-link:hover {
     color: #FFF;
     transform: scale(1.5); }
+
+@media only screen and (max-width: 768px) {
+  .nav-item {
+    width: 60px; } }
 
 .anchorLogoCarga {
   display: flex;

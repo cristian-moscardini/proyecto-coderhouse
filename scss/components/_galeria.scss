@@ -19,24 +19,18 @@
                 &>.carousel-inner {
 
                     &>.carousel-item {
-/*                         overflow-y: hidden; */
-                        height: 300px;
-                        display: flex;
-                        align-items: center;
+                        height: 600px;
 
                         &>img {
-                            overflow: hidden;
-                            height: auto;
-                            width: auto;
-
-
+/*                             overflow: hidden; */
+                            height: 100%;
+                            object-fit: cover;
                         }
                     }
-
                 }
             }
 
-            &>.textoCarousel{
+            &>.textoCarousel {
                 color: white;
                 font-family: $fuente-principal;
                 letter-spacing: 0.1rem;
@@ -66,4 +60,20 @@
 
     }
 
+}
+
+@media only screen and (max-width: 425px){
+    .backgroundGaleria{
+        &>.mainGaleria{
+            &>.sectionCarousel{
+                &>.carousel{
+                    &>.carousel-inner{
+                        &>.carousel-item{
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
